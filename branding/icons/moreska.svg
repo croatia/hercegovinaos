@@ -1,0 +1,19 @@
+<svg viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="64" height="64" rx="14" fill="#1E3A5F"/>
+  <!-- Shield background -->
+  <path d="M14 16 h36 v18 q0 8 -8 14 l-10 6 l-10-6 q-8-6 -8-14 Z" fill="rgba(255,255,255,0.1)" stroke="rgba(255,255,255,0.2)" stroke-width="1"/>
+  <!-- Sword 1 (left to right diagonal) -->
+  <line x1="14" y1="48" x2="50" y2="12" stroke="white" stroke-width="2.5" stroke-linecap="round"/>
+  <!-- Sword 1 guard -->
+  <line x1="39" y1="16" x2="46" y2="23" stroke="white" stroke-width="2.5" stroke-linecap="round"/>
+  <!-- Sword 1 handle -->
+  <line x1="50" y1="12" x2="54" y2="8" stroke="#FACC15" stroke-width="2.5" stroke-linecap="round"/>
+  <!-- Sword 2 (right to left diagonal) -->
+  <line x1="50" y1="48" x2="14" y2="12" stroke="white" stroke-width="2.5" stroke-linecap="round"/>
+  <!-- Sword 2 guard -->
+  <line x1="18" y1="23" x2="25" y2="16" stroke="white" stroke-width="2.5" stroke-linecap="round"/>
+  <!-- Sword 2 handle -->
+  <line x1="14" y1="12" x2="10" y2="8" stroke="#FACC15" stroke-width="2.5" stroke-linecap="round"/>
+  <!-- Center diamond -->
+  <path d="M32 26 L36 32 L32 38 L28 32Z" fill="#DC2626" stroke="white" stroke-width="1"/>
+</svg>

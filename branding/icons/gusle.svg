@@ -1,0 +1,21 @@
+<svg viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="64" height="64" rx="14" fill="#DC2626"/>
+  <!-- Gusle body (pear/teardrop shape) -->
+  <ellipse cx="32" cy="40" rx="12" ry="14" fill="#FEE2E2" stroke="white" stroke-width="1.5"/>
+  <!-- Sound hole -->
+  <circle cx="32" cy="42" r="4" fill="#DC2626" stroke="rgba(185,28,28,0.3)" stroke-width="0.5"/>
+  <!-- Neck -->
+  <rect x="30" y="10" width="4" height="28" rx="2" fill="#FEE2E2" stroke="white" stroke-width="1.2"/>
+  <!-- Peg head -->
+  <circle cx="32" cy="10" r="5" fill="white" stroke="rgba(255,255,255,0.5)" stroke-width="0.5"/>
+  <!-- Tuning peg -->
+  <rect x="27" y="8" width="2" height="5" rx="1" fill="#FACC15" transform="rotate(-20,28,10)"/>
+  <!-- String -->
+  <line x1="32" y1="14" x2="32" y2="52" stroke="white" stroke-width="1" opacity="0.7"/>
+  <!-- Bridge -->
+  <rect x="29" y="48" width="6" height="2" rx="1" fill="#FACC15"/>
+  <!-- Bow (curved) -->
+  <path d="M46 12 Q54 32 46 52" fill="none" stroke="white" stroke-width="1.8" stroke-linecap="round" opacity="0.6"/>
+  <!-- Bow hair -->
+  <line x1="46" y1="12" x2="46" y2="52" stroke="white" stroke-width="0.6" opacity="0.35"/>
+</svg>

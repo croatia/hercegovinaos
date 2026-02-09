@@ -1,0 +1,18 @@
+<svg viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="64" height="64" rx="14" fill="#DC2626"/>
+  <!-- Stone tablet -->
+  <rect x="12" y="14" width="26" height="38" rx="3" fill="#FEE2E2" stroke="white" stroke-width="1.5"/>
+  <!-- Glagoljica-style text lines -->
+  <line x1="17" y1="22" x2="33" y2="22" stroke="#DC2626" stroke-width="1.8" stroke-linecap="round" opacity="0.5"/>
+  <line x1="17" y1="28" x2="29" y2="28" stroke="#DC2626" stroke-width="1.8" stroke-linecap="round" opacity="0.4"/>
+  <line x1="17" y1="34" x2="34" y2="34" stroke="#DC2626" stroke-width="1.8" stroke-linecap="round" opacity="0.35"/>
+  <line x1="17" y1="40" x2="26" y2="40" stroke="#DC2626" stroke-width="1.8" stroke-linecap="round" opacity="0.25"/>
+  <!-- Quill pen -->
+  <path d="M54 8 L34 44 L32 48 L33 43 L52 6Z" fill="white" stroke="rgba(255,255,255,0.5)" stroke-width="0.5"/>
+  <!-- Feather barbs -->
+  <path d="M54 8 C50 6 48 10 54 8Z" fill="rgba(255,255,255,0.7)"/>
+  <path d="M52 12 C48 10 46 14 52 12Z" fill="rgba(255,255,255,0.5)"/>
+  <!-- Ink tip -->
+  <path d="M34 44 L32 48 L30 46 L34 44Z" fill="#FACC15"/>
+  <circle cx="31.5" cy="47" r="1.2" fill="#B45309"/>
+</svg>

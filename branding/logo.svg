@@ -1,0 +1,17 @@
+<svg viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <rect width="36" height="36" rx="8" fill="#DC2626"/>
+    <defs>
+        <clipPath id="shield">
+            <path d="M7 8h22v14q0 4-4 7l-7 4-7-4q-4-3-4-7Z"/>
+        </clipPath>
+    </defs>
+    <g clip-path="url(#shield)">
+        <!-- Row 1 --><rect x="7" y="8" width="4.4" height="4.4" fill="#DC2626"/><rect x="11.4" y="8" width="4.4" height="4.4" fill="white"/><rect x="15.8" y="8" width="4.4" height="4.4" fill="#DC2626"/><rect x="20.2" y="8" width="4.4" height="4.4" fill="white"/><rect x="24.6" y="8" width="4.4" height="4.4" fill="#DC2626"/>
+        <!-- Row 2 --><rect x="7" y="12.4" width="4.4" height="4.4" fill="white"/><rect x="11.4" y="12.4" width="4.4" height="4.4" fill="#DC2626"/><rect x="15.8" y="12.4" width="4.4" height="4.4" fill="white"/><rect x="20.2" y="12.4" width="4.4" height="4.4" fill="#DC2626"/><rect x="24.6" y="12.4" width="4.4" height="4.4" fill="white"/>
+        <!-- Row 3 --><rect x="7" y="16.8" width="4.4" height="4.4" fill="#DC2626"/><rect x="11.4" y="16.8" width="4.4" height="4.4" fill="white"/><rect x="15.8" y="16.8" width="4.4" height="4.4" fill="#DC2626"/><rect x="20.2" y="16.8" width="4.4" height="4.4" fill="white"/><rect x="24.6" y="16.8" width="4.4" height="4.4" fill="#DC2626"/>
+        <!-- Row 4 --><rect x="7" y="21.2" width="4.4" height="4.4" fill="white"/><rect x="11.4" y="21.2" width="4.4" height="4.4" fill="#DC2626"/><rect x="15.8" y="21.2" width="4.4" height="4.4" fill="white"/><rect x="20.2" y="21.2" width="4.4" height="4.4" fill="#DC2626"/><rect x="24.6" y="21.2" width="4.4" height="4.4" fill="white"/>
+        <!-- Row 5 --><rect x="7" y="25.6" width="4.4" height="4.4" fill="#DC2626"/><rect x="11.4" y="25.6" width="4.4" height="4.4" fill="white"/><rect x="15.8" y="25.6" width="4.4" height="4.4" fill="#DC2626"/><rect x="20.2" y="25.6" width="4.4" height="4.4" fill="white"/><rect x="24.6" y="25.6" width="4.4" height="4.4" fill="#DC2626"/>
+    </g>
+    <!-- Lightning bolt -->
+    <path d="M20 8L15 18l4 0-5 11 9-13h-4.5L22 8Z" fill="#FACC15" stroke="#B45309" stroke-width="0.5" opacity="0.92"/>
+</svg>

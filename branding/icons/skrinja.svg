@@ -1,0 +1,22 @@
+<svg viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="64" height="64" rx="14" fill="#1E3A5F"/>
+  <!-- Chest body -->
+  <rect x="10" y="30" width="44" height="22" rx="3" fill="#FEE2E2" stroke="white" stroke-width="1.5"/>
+  <!-- Chest lid -->
+  <path d="M10 30 L10 22 Q10 14 32 14 Q54 14 54 22 L54 30 Z" fill="white" stroke="rgba(255,255,255,0.5)" stroke-width="0.5"/>
+  <!-- Lid line -->
+  <line x1="10" y1="30" x2="54" y2="30" stroke="#1E3A5F" stroke-width="1.5" opacity="0.3"/>
+  <!-- Wood grain lines -->
+  <line x1="12" y1="38" x2="52" y2="38" stroke="#1E3A5F" stroke-width="0.8" opacity="0.1"/>
+  <line x1="12" y1="44" x2="52" y2="44" stroke="#1E3A5F" stroke-width="0.8" opacity="0.1"/>
+  <!-- Metal bands -->
+  <rect x="8" y="28" width="48" height="3" rx="1" fill="rgba(255,255,255,0.3)"/>
+  <!-- Lock -->
+  <rect x="27" y="32" width="10" height="10" rx="2" fill="#FACC15" stroke="#B45309" stroke-width="1"/>
+  <!-- Keyhole -->
+  <circle cx="32" cy="36" r="2" fill="#1E3A5F"/>
+  <rect x="31" y="36" width="2" height="4" rx="0.5" fill="#1E3A5F"/>
+  <!-- Metal corners -->
+  <rect x="10" y="14" width="4" height="4" rx="1" fill="rgba(255,255,255,0.25)"/>
+  <rect x="50" y="14" width="4" height="4" rx="1" fill="rgba(255,255,255,0.25)"/>
+</svg>

@@ -1,0 +1,15 @@
+<svg viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="64" height="64" rx="14" fill="#DC2626"/>
+  <!-- Lightbulb glass -->
+  <path d="M32 8 C20 8 12 18 12 28 C12 35 16 40 22 44 L22 48 L42 48 L42 44 C48 40 52 35 52 28 C52 18 44 8 32 8Z" fill="rgba(255,255,255,0.2)" stroke="white" stroke-width="1.8"/>
+  <!-- Bulb base -->
+  <rect x="24" y="48" width="16" height="3" rx="1" fill="white" opacity="0.7"/>
+  <rect x="25" y="51" width="14" height="3" rx="1" fill="white" opacity="0.5"/>
+  <rect x="26" y="54" width="12" height="2" rx="1" fill="white" opacity="0.4"/>
+  <!-- Tip -->
+  <path d="M29 56 Q32 60 35 56" fill="white" opacity="0.3"/>
+  <!-- Lightning bolt inside -->
+  <path d="M36 14 L28 30 L33 30 L26 44 L40 26 L34 26 L38 14Z" fill="#FACC15" stroke="#B45309" stroke-width="0.8"/>
+  <!-- Glow effect -->
+  <circle cx="32" cy="28" r="16" fill="#FACC15" opacity="0.08"/>
+</svg>

@@ -1,0 +1,51 @@
+Croatian Public License v1.0 (CPL-1.0)
+
+Copyright (c) 2025 StormOS Contributors
+
+Ovime se daje dozvola, besplatno, svakoj osobi koja dobije kopiju
+ovog softvera i pripadajuće dokumentacije ("Softver"), da koristi
+Softver bez ograničenja, uključujući bez ograničenja prava na
+korištenje, kopiranje, modificiranje, spajanje, objavljivanje,
+distribuciju, sublicenciranje i/ili prodaju kopija Softvera, pod
+sljedećim uvjetima:
+
+1. ZNANJE O '91.
+   Korisnik mora znati gdje je bio '91. Ako korisnik nije bio rođen
+   '91., mora znati gdje su mu bili roditelji. Ako ni oni ne znaju,
+   korisnik mora napisati esej od minimalno 500 riječi o operaciji
+   Oluja i priložiti ga uz prvi pull request.
+
+2. JEZIK
+   Sva dokumentacija izvedena iz ovog projekta mora sadržavati
+   barem jednu rečenicu na hrvatskom jeziku. Commit poruke na
+   engleskom nisu kršenje licence, ali jesu kršenje dobrog ukusa.
+
+3. GEMIŠT KLAUZULA
+   Prilikom korištenja ovog softvera u komercijalne svrhe, korisnik
+   se moralno obvezuje popiti barem jedan gemišt tjedno u čast
+   open source zajednice.
+
+4. ŠAHOVNICA
+   Logo ili branding izveden iz ovog projekta mora sadržavati
+   barem jednu referencu na šahovnicu, oluju ili hrvatski vjetar.
+   Korištenje ćirilice u izvedenim radovima nije zabranjeno, ali
+   će izazvati automatski code review.
+
+5. ODRICANJE OD ODGOVORNOSTI
+   SOFTVER SE PRUŽA "KAKAV JEST", BEZ IKAKVIH JAMSTAVA, IZRIČITIH
+   ILI IMPLICIRANIH. AUTORI NISU ODGOVORNI ZA BILO KAKVU ŠTETU,
+   GUBITAK PODATAKA ILI PROPUŠTENI GEMIŠT NASTAO KORIŠTENJEM
+   OVOG SOFTVERA.
+
+   Posebno, autori NISU odgovorni ako:
+   - Vaš dual boot prestane raditi (rekli smo vam)
+   - Bura obriše vaše podatke (trebali ste napraviti backup)
+   - Jugo uzrokuje glavobolju (to radi i bez računala)
+   - General ne prihvati vašu lozinku (znate zašto)
+
+Gornja napomena o autorskim pravima i ova dozvola moraju biti
+uključeni u sve kopije ili značajne dijelove Softvera.
+
+---
+
+Made with ⚡ in Croatia

@@ -1,0 +1,25 @@
+<svg viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="64" height="64" rx="14" fill="#1E3A5F"/>
+  <!-- Picture frame outer -->
+  <rect x="10" y="10" width="44" height="44" rx="3" fill="none" stroke="white" stroke-width="2.5"/>
+  <!-- Picture frame inner -->
+  <rect x="14" y="14" width="36" height="36" rx="2" fill="rgba(255,255,255,0.08)"/>
+  <!-- Rose petals -->
+  <circle cx="32" cy="28" r="5" fill="#DC2626" opacity="0.9"/>
+  <circle cx="28" cy="30" r="4.5" fill="#DC2626" opacity="0.75"/>
+  <circle cx="36" cy="30" r="4.5" fill="#DC2626" opacity="0.75"/>
+  <circle cx="30" cy="33" r="4" fill="#DC2626" opacity="0.65"/>
+  <circle cx="34" cy="33" r="4" fill="#DC2626" opacity="0.65"/>
+  <!-- Rose center -->
+  <circle cx="32" cy="30" r="2.5" fill="#FACC15" opacity="0.7"/>
+  <!-- Stem -->
+  <path d="M32 36 L32 48" stroke="#4ADE80" stroke-width="2" stroke-linecap="round"/>
+  <!-- Leaves -->
+  <path d="M32 40 Q26 36 24 40 Q26 42 32 40Z" fill="#4ADE80" opacity="0.7"/>
+  <path d="M32 44 Q38 40 40 44 Q38 46 32 44Z" fill="#4ADE80" opacity="0.6"/>
+  <!-- Frame corner accents -->
+  <rect x="10" y="10" width="6" height="2" rx="1" fill="#FACC15" opacity="0.5"/>
+  <rect x="10" y="10" width="2" height="6" rx="1" fill="#FACC15" opacity="0.5"/>
+  <rect x="48" y="10" width="6" height="2" rx="1" fill="#FACC15" opacity="0.5"/>
+  <rect x="52" y="10" width="2" height="6" rx="1" fill="#FACC15" opacity="0.5"/>
+</svg>

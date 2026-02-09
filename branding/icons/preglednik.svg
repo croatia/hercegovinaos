@@ -1,0 +1,35 @@
+<svg viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="64" height="64" rx="14" fill="#DC2626"/>
+  <!-- Globe circle -->
+  <circle cx="32" cy="32" r="22" fill="rgba(255,255,255,0.15)" stroke="white" stroke-width="2"/>
+  <!-- Croatian flag horizontal stripes clipped to globe -->
+  <clipPath id="globe-clip">
+    <circle cx="32" cy="32" r="21"/>
+  </clipPath>
+  <g clip-path="url(#globe-clip)">
+    <!-- Red stripe (top) -->
+    <rect x="10" y="10" width="44" height="15" fill="#DC2626"/>
+    <!-- White stripe (middle) -->
+    <rect x="10" y="25" width="44" height="14" fill="white"/>
+    <!-- Blue stripe (bottom) -->
+    <rect x="10" y="39" width="44" height="15" fill="#1E3A5F"/>
+    <!-- Globe meridian lines -->
+    <ellipse cx="32" cy="32" rx="10" ry="21" fill="none" stroke="rgba(0,0,0,0.12)" stroke-width="1"/>
+    <ellipse cx="32" cy="32" rx="18" ry="21" fill="none" stroke="rgba(0,0,0,0.08)" stroke-width="1"/>
+    <!-- Globe latitude lines -->
+    <ellipse cx="32" cy="22" rx="20" ry="4" fill="none" stroke="rgba(0,0,0,0.08)" stroke-width="0.8"/>
+    <ellipse cx="32" cy="42" rx="20" ry="4" fill="none" stroke="rgba(0,0,0,0.08)" stroke-width="0.8"/>
+    <!-- Small šahovnica in center -->
+    <rect x="27" y="27" width="3" height="3" fill="#DC2626"/>
+    <rect x="30" y="27" width="3" height="3" fill="white" stroke="#DC2626" stroke-width="0.3"/>
+    <rect x="33" y="27" width="3" height="3" fill="#DC2626"/>
+    <rect x="27" y="30" width="3" height="3" fill="white" stroke="#DC2626" stroke-width="0.3"/>
+    <rect x="30" y="30" width="3" height="3" fill="#DC2626"/>
+    <rect x="33" y="30" width="3" height="3" fill="white" stroke="#DC2626" stroke-width="0.3"/>
+    <rect x="27" y="33" width="3" height="3" fill="#DC2626"/>
+    <rect x="30" y="33" width="3" height="3" fill="white" stroke="#DC2626" stroke-width="0.3"/>
+    <rect x="33" y="33" width="3" height="3" fill="#DC2626"/>
+  </g>
+  <!-- Globe outline (on top) -->
+  <circle cx="32" cy="32" r="21" fill="none" stroke="white" stroke-width="1.5"/>
+</svg>
