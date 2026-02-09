@@ -9,7 +9,7 @@
 </p>
 
 <p align="center">
-  <a href="https://stormos.pages.dev">🌐 Website</a> •
+  <a href="https://stormos.site">🌐 Website</a> •
   <a href="#instalacija">📥 Instalacija</a> •
   <a href="#značajke">⚡ Značajke</a> •
   <a href="#doprinesi">🤝 Doprinesi</a> •
@@ -186,7 +186,7 @@ scripts/
 
 ```bash
 # 1. Preuzmi ISO
-wget https://stormos.pages.dev/releases/stormos-1.0-bura-amd64.iso
+wget https://stormos.site//releases/stormos-1.0-bura-amd64.iso
 
 # 2. Provjeri hash (obvezno!)
 sha256sum stormos-1.0-bura-amd64.iso
