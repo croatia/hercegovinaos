@@ -1,0 +1,60 @@
+# ⚡ StormOS 1.0 Bura — .bashrc
+# Oslobodi svoj desktop.
+
+# ===== Prompt =====
+PS1='\[\033[0;36m\]⚡ \[\033[1;37m\]\u\[\033[0m\]@\[\033[0;31m\]stormos\[\033[0m\]:\[\033[0;34m\]\w\[\033[0m\]\$ '
+
+# ===== History =====
+HISTSIZE=1991
+HISTFILESIZE=1995
+HISTCONTROL=ignoreboth
+PROMPT_COMMAND="history -a"
+
+# ===== Aliases =====
+alias ll='ls -la --color=auto'
+alias ls='ls --color=auto'
+alias grep='grep --color=auto'
+
+# StormOS aliases
+alias history='ako-ne-znas-sta-je-bilo'
+alias sudo='general'
+alias apt='oluja'
+alias apt-get='oluja'
+
+# Fun aliases
+alias sloboda='echo "🇭🇷 Sloboda za svaki bajt."'
+alias domovina='echo "🇭🇷 Ljepša si od svih riječi — Hrvatska!"'
+alias oluja-status='echo "⚡ StormOS 1.0 Bura — Sustav oslobođen. Svi procesi operativni."'
+alias 91='echo "🔐 Gdje si bio '"'"'91.?"'
+
+# ===== Colors =====
+export LS_COLORS='di=1;34:fi=0:ln=36:pi=33:so=35:bd=33;1:cd=33;1:or=31:mi=31:ex=32'
+
+# ===== MOTD + Neofetch on first login =====
+if [ -z "$STORMOS_WELCOMED" ]; then
+    export STORMOS_WELCOMED=1
+    bash /etc/update-motd.d/00-stormos
+    neofetch --off 2>/dev/null
+fi
+
+# ===== Error handler =====
+command_not_found_handle() {
+    local cmd="$1"
+    local responses=(
+        "Nešto je pošlo po krivu. Naredba '$cmd' ne postoji. Probajte ponovno ili popijte kavu."
+        "Naredba '$cmd' je otišla na more. Vratit će se u rujnu."
+        "General ne prepoznaje naredbu '$cmd'. Jeste li probali 'oluja search $cmd'?"
+        "'$cmd'? Nikad čuo. Kao ni za dual boot."
+        "Naredba '$cmd' nije pronađena na teritoriju StormOS-a."
+    )
+    local idx=$((RANDOM % ${#responses[@]}))
+    echo -e "\033[0;31m⚡ ${responses[$idx]}\033[0m" >&2
+    return 127
+}
+
+# ===== Welcome check for 5. kolovoza =====
+if [ "$(date +%m-%d)" = "08-05" ]; then
+    export SUDO_PROMPT=$'🇭🇷 Dan pobjede! General automatski odobrava: '
+else
+    export SUDO_PROMPT=$'🔐 Gdje si bio \'91.?: '
+fi

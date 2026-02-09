@@ -142,6 +142,48 @@ Svaka verzija nazvana po hrvatskom vjetru:
 
 ## Instalacija
 
+### Docker (brzi start)
+
+Najbrži način da iskusiš StormOS — bez instalacije, bez USB-a, bez predaje:
+
+```bash
+# Buildaj image iz root direktorija projekta
+docker build -t stormos:bura .
+
+# Pokreni StormOS
+docker run -it stormos:bura
+```
+
+Dočekat će te šahovnica, MOTD i puni StormOS terminal experience — `oluja`, `general`, `neofetch` i sve ostalo.
+
+#### Struktura Docker builda
+
+```
+Dockerfile              # Glavni Dockerfile (build context = repo root)
+.dockerignore           # Isključuje branding/, docs/, *.md, *.zip, *.iso
+docker/
+├── bashrc              # Custom .bashrc s promptom, aliasima i MOTD pozivom
+├── motd.sh             # Message of the Day — šahovnica + brzi start
+├── command-not-found.sh # Hrvatske error poruke za nepoznate naredbe
+└── stormos-aliases.sh  # Aliasi: oluja→apt, general→sudo, itd.
+config/
+├── neofetch.conf       # Custom neofetch config (info bez ASCII arta)
+└── stormos-ascii.txt   # Šahovnica ASCII art
+scripts/
+├── oluja.sh            # Package manager wrapper
+├── general.sh          # Sudo wrapper
+└── ako-ne-znas-sta-je-bilo.sh  # History wrapper
+```
+
+#### Napomene
+
+- Build context mora biti **root direktorij projekta** (gdje je `Dockerfile`)
+- Image je baziran na `ubuntu:24.04`
+- Default korisnik: `general` (lozinka: `oluja1995`)
+- Login shell automatski prikazuje MOTD + neofetch system info
+
+### ISO (klasična instalacija)
+
 ```bash
 # 1. Preuzmi ISO
 wget https://stormos.pages.dev/releases/stormos-1.0-bura-amd64.iso
@@ -198,25 +240,31 @@ Pogledajte [CONTRIBUTING.md](CONTRIBUTING.md) za sve detalje.
 
 ```
 stormos/
+├── Dockerfile             # Docker build definicija
+├── .dockerignore          # Excludes za Docker build context
 ├── README.md              # Ovo čitate
 ├── CONTRIBUTING.md        # Pravila za doprinose (gemišt obavezan)
 ├── LICENSE                # Croatian Public License v1.0
 ├── CODE_OF_CONDUCT.md     # Budite pristojni ili idete na klupu
-├── docs/
-│   ├── installation.md    # Upute za instalaciju
-│   └── oluja-manual.md   # Priručnik za oluja CLI
-├── branding/
-│   ├── logo.svg           # StormOS logo
-│   ├── wallpapers/        # Default wallpaperi
-│   └── icons/             # GROB ikone
+├── docker/
+│   ├── bashrc             # Custom .bashrc za StormOS experience
+│   ├── motd.sh            # MOTD — šahovnica banner + brzi start
+│   ├── command-not-found.sh # Hrvatske poruke za nepoznate naredbe
+│   └── stormos-aliases.sh # Aliasi (oluja→apt, general→sudo)
 ├── scripts/
 │   ├── oluja.sh           # Wrapper za apt
 │   ├── general.sh         # Wrapper za sudo
 │   └── ako-ne-znas-sta-je-bilo.sh  # Wrapper za history
-└── config/
-    ├── general.conf       # Konfiguracija za general
-    ├── neofetch.conf      # Custom neofetch
-    └── grob/              # GROB desktop config
+├── config/
+│   ├── neofetch.conf      # Custom neofetch config
+│   └── stormos-ascii.txt  # Šahovnica ASCII art
+├── docs/
+│   ├── installation.md    # Upute za instalaciju
+│   └── oluja-manual.md   # Priručnik za oluja CLI
+└── branding/
+    ├── logo.svg           # StormOS logo
+    ├── wallpapers/        # Default wallpaperi
+    └── icons/             # GROB ikone
 ```
 
 ---

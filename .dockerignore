@@ -1,0 +1,10 @@
+.git
+.gitignore
+*.md
+!scripts/*.md
+LICENSE
+SETUP.sh
+branding/
+docs/
+*.zip
+*.iso

@@ -15,24 +15,25 @@ echo ""
 echo -e "  ${BOLD}Zanima te povijest? Evo ti povijest:${NC}"
 echo ""
 
-# Pass through to history via bash
+# Čitaj iz ~/.bash_history (PROMPT_COMMAND="history -a" u bashrcu osigurava svjež zapis)
+HISTFILE="${HOME}/.bash_history"
+
 if [ "$1" = "--help" ] || [ "$1" = "-h" ]; then
-    echo "  Uporaba: ako-ne-znaš-šta-je-bilo [n]"
+    echo "  Uporaba: ako-ne-znas-sta-je-bilo [n]"
     echo ""
     echo "  Prikazuje povijest naredbi u terminalu."
     echo "  Opcionalno: broj zadnjih naredbi za prikaz."
     echo ""
     echo "  Primjer:"
-    echo "    ako-ne-znaš-šta-je-bilo        # Sve"
-    echo "    ako-ne-znaš-šta-je-bilo 20     # Zadnjih 20"
+    echo "    ako-ne-znas-sta-je-bilo        # Sve"
+    echo "    ako-ne-znas-sta-je-bilo 20     # Zadnjih 20"
     echo ""
-    echo "  Napomena: Tko ne poznaje svoju povijest,"
-    echo "            osuđen je da je ponovi."
-    echo ""
+elif [ ! -f "$HISTFILE" ]; then
+    echo "  Još nema povijesti. Tek si počeo — piši povijest!"
 elif [ -n "$1" ]; then
-    history "$1" 2>/dev/null || cat ~/.bash_history | tail -n "$1" | nl
+    tail -n "$1" "$HISTFILE" | nl
 else
-    history 2>/dev/null || cat ~/.bash_history | nl
+    cat "$HISTFILE" | nl
 fi
 
 echo ""

@@ -4,7 +4,7 @@
 # Verzija: 1.0-bura
 # Licenca: Croatian Public License v1.0
 
-set -e
+set -eo pipefail
 
 VERSION="1.0-bura"
 RED='\033[0;31m'
@@ -39,7 +39,7 @@ case "${1}" in
         msg_warning "Priprema se ofenziva..."
         msg_info "Kontaktiram zapovjedno središte..."
         echo ""
-        apt-get update "$@" 2>&1 | sed 's/^/  /'
+        apt-get update 2>&1 | sed 's/^/  /'
         echo ""
         msg_success "Obavještajni podaci ažurirani. Sustav spreman."
         ;;
