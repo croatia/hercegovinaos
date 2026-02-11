@@ -1,7 +1,7 @@
-# ⚡ StormOS — Prva hrvatska Linux distribucija
+# ⚡ HercegOS — Prva hrvatska Linux distribucija
 
 <p align="center">
-  <img src="branding/stormos-banner.png" alt="StormOS Banner" width="600">
+  <img src="branding/hercegovinaos-banner.png" alt="HercegovinaOS Banner" width="600">
 </p>
 
 <p align="center">
@@ -9,7 +9,7 @@
 </p>
 
 <p align="center">
-  <a href="https://stormos.site">🌐 Website</a> •
+  <a href="https://hdz.hr">🌐 Website</a> •
   <a href="#instalacija">📥 Instalacija</a> •
   <a href="#značajke">⚡ Značajke</a> •
   <a href="#doprinesi">🤝 Doprinesi</a> •
@@ -26,62 +26,66 @@
 
 ---
 
-## Što je StormOS?
+## Što je HercegOS?
 
-**StormOS** je prva hrvatska Linux distribucija bazirana na Ubuntu LTS-u. Dizajniran za slobodu, optimiziran za domovinu.
+HercegOS je prva hercegovačka Linux distribucija bazirana na Ubuntu LTS-u. Dizajniran za krš, optimiziran za inat.
 
-Ime je inspirirano operacijom Oluja (kolovoz 1995.) — jer ako možemo osloboditi teritorij, možemo osloboditi i vaš desktop.
+Ime je inspirirano Hercegovinom — jer ako voda može nestat u ponoru i pojavit se 20 km dalje, može i vaš bug nestat nakon reboot-a.
 
-### Desktop Environment: GROB
+Desktop Environment: KAMEN
+Kompaktni Ambijent Minimalističke ENergije — prilagođeni GNOME fork
 
-**GNOME Republike OBrane** — prilagođeni GNOME fork sa:
-- 🏁 Šahovnica wallpaper (default, naravno)
-- 💨 Window animacije inspiriane burom
-- ⚡ Custom ikone s hrvatskim motivima
-- 🔊 Zvuk pokretanja: zvuk grmljavine nad Kninom
+Posebna "HDZ kompatibilnost" :
+Svaka postavka ima tri opcije: "Može", "Vidit ćemo" i "Dogovorit ćemo" 😂
+
+Poseban "Kamen, krš i maslina" preset 🌿🪨🫒:
+•	Tema: "Krš Dark Mode" (tamnije od hercegovačke noći bez svitla 😂)
+•	Ikone: maslina za Settings 🫒, kamen za File Manager 🪨, krš za Terminal 😈
+•	Battery saver: "Maslinovo ulje" mode — sve radi sporije, ali traje duže 😅
+•	Screensaver: slideshow "kamen → krš → maslina" u loopu, da se ne zaboravi di si
 
 ---
 
 ## Značajke
 
-### 📦 `oluja` — Upravitelj paketa
+### 📦 `lipo` — Upravitelj paketa
 
-Zaboravite `apt`. Na StormOS-u koristimo `oluja`:
+Zaboravite `apt`. Na HercegOS-u koristimo `lipo`:
 
 ```bash
 # Ažuriranje popisa paketa
-oluja update
+lipo update
 # 🔍 Priprema se ofenziva...
 # 📡 Kontaktiram zapovjedno središte...
 # ✅ Obavještajni podaci ažurirani. 1,995 paketa spremno.
 
 # Instalacija paketa
-oluja install bašćanka
+lipo install bašćanka
 # 📦 Čitam popise paketa... Gotovo.
 # 🎯 Ciljani paket: bašćanka (v4.2.0-hr1)
 # ✅ bašćanka uspješno instalirana. Pišite povijest.
 
 # Nadogradnja sustava (zahtijeva general)
-general oluja upgrade
+general lipo upgrade
 # 🔐 Gdje si bio '91.?: ********
 # 🎖️  Identitet potvrđen. General odobrava operaciju.
 # 🚀 Pokrenuta operacija nadogradnje...
 # ✅ Sustav oslobođen. 42 paketa nadograđena. 0 zarobljenih.
 
 # Uklanjanje paketa
-oluja remove paket
+lipo remove paket
 # 🏳️ Povlačenje iz sektora...
 # ✅ Paket uklonjen s terena.
 
 # Čišćenje
-oluja autoremove
+lipo autoremove
 # 🧹 Čišćenje terena...
 # ✅ Teren čist. Nema zaostalih jedinica.
 ```
 
 ### 🔐 `general` — jer sudo ima čin
 
-Na StormOS-u, `sudo` je zamijenjen s `general`. Kad pokrenete privilegiranu operaciju, sustav vas pita:
+Na HercegovinaOS-u, `sudo` je zamijenjen s `general`. Kad pokrenete privilegiranu operaciju, sustav vas pita:
 
 ```
 🔐 Gdje si bio '91.?:
@@ -103,7 +107,7 @@ Jedini prihvatljivi odgovori su pohranjeni u `/etc/general.conf`. Zadano: vaša 
 ### ⚙️ Terminal
 
 ```
-⚡ korisnik@stormos:~$
+⚡ korisnik@hercegovinaos:~$
 ```
 
 - Default shell prompt s munjom
@@ -125,7 +129,7 @@ Svaka verzija nazvana po hrvatskom vjetru:
 | v2.0 | **Jugo** | 🔨 U razvoju | Sporiji, ali donosi vlagu ekosustavu. Bugfix release. Izaziva glavobolju. |
 | v3.0 | **Maestral** | 📋 2026 | Svjež, stabilan, ugodan. Puše samo ljeti — kao i naši developeri. |
 | v4.0 | **Tramontana** | 📋 2027 | Security-hardened. Oštar kao sjeverac. |
-| v5.0 | **Nevera** | 📋 Kad bude | Major breaking changes. Nismo vas upozorili? Jesmo. |
+| v5.0 | **Nevera** | 📋 ne znan | Major breaking changes. Nismo vas upozorili? Jesmo. |
 
 ---
 
@@ -144,17 +148,17 @@ Svaka verzija nazvana po hrvatskom vjetru:
 
 ### Docker (brzi start)
 
-Najbrži način da iskusiš StormOS — bez instalacije, bez USB-a, bez predaje:
+Najbrži način da iskusiš HercegovinaOS — bez instalacije, bez USB-a, bez predaje:
 
 ```bash
 # Buildaj image iz root direktorija projekta
-docker build -t stormos:bura .
+docker build -t hercegovinaos:bura .
 
-# Pokreni StormOS
-docker run -it stormos:bura
+# Pokreni HercegovinaOS
+docker run -it hercegovinaos:bura
 ```
 
-Dočekat će te šahovnica, MOTD i puni StormOS terminal experience — `oluja`, `general`, `neofetch` i sve ostalo.
+Dočekat će te šahovnica, MOTD i puni HercegovinaOS terminal experience — `lipo`, `general`, `neofetch` i sve ostalo.
 
 #### Struktura Docker builda
 
@@ -165,12 +169,12 @@ docker/
 ├── bashrc              # Custom .bashrc s promptom, aliasima i MOTD pozivom
 ├── motd.sh             # Message of the Day — šahovnica + brzi start
 ├── command-not-found.sh # Hrvatske error poruke za nepoznate naredbe
-└── stormos-aliases.sh  # Aliasi: oluja→apt, general→sudo, itd.
+└── hercegovinaos-aliases.sh  # Aliasi: lipo→apt, general→sudo, itd.
 config/
 ├── neofetch.conf       # Custom neofetch config (info bez ASCII arta)
-└── stormos-ascii.txt   # Šahovnica ASCII art
+└── hercegovinaos-ascii.txt   # Šahovnica ASCII art
 scripts/
-├── oluja.sh            # Package manager wrapper
+├── lipo.sh            # Package manager wrapper
 ├── general.sh          # Sudo wrapper
 └── ako-ne-znas-sta-je-bilo.sh  # History wrapper
 ```
@@ -186,14 +190,14 @@ scripts/
 
 ```bash
 # 1. Preuzmi ISO
-wget https://stormos.site//releases/stormos-1.0-bura-amd64.iso
+wget https://hercegovinaos.site//releases/hercegovinaos-1.0-bura-amd64.iso
 
 # 2. Provjeri hash (obvezno!)
-sha256sum stormos-1.0-bura-amd64.iso
+sha256sum hercegovinaos-1.0-bura-amd64.iso
 # Očekivano: 1995080500000000000000000000000000000000000000000000000000000000
 
 # 3. Zapiši na USB
-general dd if=stormos-1.0-bura-amd64.iso of=/dev/sdX bs=4M status=progress
+general dd if=hercegovinaos-1.0-bura-amd64.iso of=/dev/sdX bs=4M status=progress
 
 # 4. Pokreni. Oslobodi. Nikad se ne osvrći.
 ```
@@ -208,7 +212,7 @@ Doprinosi su dobrodošli! Ali postoje pravila:
 2. **Code review** se radi na terasi ☀️
 3. **Commit poruke** moraju biti na hrvatskom
 4. **Tab vs Spaces** — koristimo tabove, jer Hrvatska koristi tabove. To nije tema za raspravu.
-5. **CI/CD** — svaki push prolazi kroz `oluja test`. Ako padne, idete na klupu.
+5. **CI/CD** — svaki push prolazi kroz `lipo test`. Ako padne, idete na klupu.
 
 Pogledajte [CONTRIBUTING.md](CONTRIBUTING.md) za sve detalje.
 
@@ -216,10 +220,10 @@ Pogledajte [CONTRIBUTING.md](CONTRIBUTING.md) za sve detalje.
 
 ## FAQ
 
-**Podržava li StormOS dual boot?**
+**Podržava li HercegovinaOS dual boot?**
 > Ne pregovaramo s drugim operativnim sustavima.
 
-**Je li StormOS besplatan?**
+**Je li HercegovinaOS besplatan?**
 > Sloboda nema cijenu. Ali donacije primamo — u kunama. Čekaj...
 
 **Mogu li pokrenuti Windows aplikacije?**
@@ -239,7 +243,7 @@ Pogledajte [CONTRIBUTING.md](CONTRIBUTING.md) za sve detalje.
 ## Struktura projekta
 
 ```
-stormos/
+hercegovinaos/
 ├── Dockerfile             # Docker build definicija
 ├── .dockerignore          # Excludes za Docker build context
 ├── README.md              # Ovo čitate
@@ -247,22 +251,22 @@ stormos/
 ├── LICENSE                # Croatian Public License v1.0
 ├── CODE_OF_CONDUCT.md     # Budite pristojni ili idete na klupu
 ├── docker/
-│   ├── bashrc             # Custom .bashrc za StormOS experience
+│   ├── bashrc             # Custom .bashrc za HercegovinaOS experience
 │   ├── motd.sh            # MOTD — šahovnica banner + brzi start
 │   ├── command-not-found.sh # Hrvatske poruke za nepoznate naredbe
-│   └── stormos-aliases.sh # Aliasi (oluja→apt, general→sudo)
+│   └── hercegovinaos-aliases.sh # Aliasi (oluja→apt, general→sudo)
 ├── scripts/
-│   ├── oluja.sh           # Wrapper za apt
+│   ├── lipo.sh           # Wrapper za apt
 │   ├── general.sh         # Wrapper za sudo
 │   └── ako-ne-znas-sta-je-bilo.sh  # Wrapper za history
 ├── config/
 │   ├── neofetch.conf      # Custom neofetch config
-│   └── stormos-ascii.txt  # Šahovnica ASCII art
+│   └── hercegovinaos-ascii.txt  # Šahovnica ASCII art
 ├── docs/
 │   ├── installation.md    # Upute za instalaciju
-│   └── oluja-manual.md   # Priručnik za oluja CLI
+│   └── lipo-manual.md   # Priručnik za lipo CLI
 └── branding/
-    ├── logo.svg           # StormOS logo
+    ├── logo.svg           # HercegovinaOS logo
     ├── wallpapers/        # Default wallpaperi
     └── icons/             # GROB ikone
 ```
@@ -279,7 +283,7 @@ Distribuirano pod **Croatian Public License v1.0**:
 ---
 
 <p align="center">
-  <strong>⚡ StormOS — Oslobodi svoj desktop</strong><br>
+  <strong>⚡ HercegovinaOS — Oslobodi svoj desktop</strong><br>
   <em>Hostano na Cloudflare Pages — besplatno, kao pravi Hrvat</em><br><br>
-  Made with ❤️ in Croatia 🇭🇷
+  Made with ❤️ in Croatia 🇭🇷 - [posudio hercegovac]
 </p>
