@@ -39,10 +39,10 @@ Posebna "HDZ kompatibilnost" :
 Svaka postavka ima tri opcije: "Može", "Vidit ćemo" i "Dogovorit ćemo" 😂
 
 Poseban "Kamen, krš i maslina" preset 🌿🪨🫒:
-•	Tema: "Krš Dark Mode" (tamnije od hercegovačke noći bez svitla 😂)
-•	Ikone: maslina za Settings 🫒, kamen za File Manager 🪨, krš za Terminal 😈
-•	Battery saver: "Maslinovo ulje" mode — sve radi sporije, ali traje duže 😅
-•	Screensaver: slideshow "kamen → krš → maslina" u loopu, da se ne zaboravi di si
+- Tema: "Krš Dark Mode" (tamnije od hercegovačke noći bez svitla 😂)
+- Ikone: maslina za Settings 🫒, kamen za File Manager 🪨, krš za Terminal 😈
+- Battery saver: "Maslinovo ulje" mode — sve radi sporije, ali traje duže 😅
+- Screensaver: slideshow "kamen → krš → maslina" u loopu, da se ne zaboravi di si
 
 ---
 
